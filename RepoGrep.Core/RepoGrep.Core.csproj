@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\RepoGrep.Core.xml</DocumentationFile>
+
+    <AssemblyTitle>RepoGrep.Core</AssemblyTitle>
+    <AssemblyDescription>Core library for RepoGrep - a text-based search tool for code repositories</AssemblyDescription>
+    <Company>bogpony</Company>
+    <Authors>bogpony</Authors>
+    <Product>RepoGrep</Product>
+  </PropertyGroup>
+
+</Project>

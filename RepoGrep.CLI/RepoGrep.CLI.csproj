@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Basic configuration -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- Assembly Metadata -->
+    <AssemblyTitle>RepoGrep CLI</AssemblyTitle>
+    <AssemblyDescription>Command-line interface for RepoGrep, a text-based search tool.</AssemblyDescription>
+    <Company>BogPony</Company>
+    <Authors>BogPony</Authors>
+    <Product>RepoGrep</Product>
+    <PackageId>RepoGrep.CLI</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+
+    <!-- Generate XML docs (helpful if others reference this assembly or you want IntelliSense docs) -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\RepoGrep.CLI.xml</DocumentationFile>
+
+    <!-- Optional Publish Settings for advanced scenarios -->
+    <!-- If you want a single-file output -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <!-- If you want to trim unused framework assemblies -->
+    <PublishTrimmed>false</PublishTrimmed>
+    <!-- For Native AOT (fully ahead-of-time compilation) -->
+    <!-- <PublishAot>true</PublishAot> -->
+    <!-- Or if you prefer ReadyToRun partial precompilation -->
+    <!-- <PublishReadyToRun>true</PublishReadyToRun> -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Reference your Core library project -->
+    <ProjectReference Include="..\RepoGrep.Core\RepoGrep.Core.csproj" />
+
+    <!-- CLI dependencies (e.g., System.CommandLine) -->
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RepoGrep": {
+      "commandName": "Project",
+      "commandLineArgs": "\"class\" C:\\Users\\eogcl\\source\\repos\\RepoGrep --recursive --ignore-case --line-numbers --verbose --parallel"
+    }
+  }
+}

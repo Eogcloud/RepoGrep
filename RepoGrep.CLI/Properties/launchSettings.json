@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "RepoGrep.CLI": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\eogcl\\source\\repos\\RepoGrep",
+      "commandLineArgs": "\"class\" . -r -i -n -v -p -e \".cs,.md,.txt\""
+    }
+  }
+}
